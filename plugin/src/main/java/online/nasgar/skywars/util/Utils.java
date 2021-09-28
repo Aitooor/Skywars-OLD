@@ -1,4 +1,4 @@
-package online.nasgar.skywars.utils;
+package online.nasgar.skywars.util;
 
 import org.bukkit.ChatColor;
 
