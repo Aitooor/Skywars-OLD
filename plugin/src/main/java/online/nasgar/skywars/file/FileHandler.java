@@ -1,6 +1,6 @@
 package online.nasgar.skywars.file;
 
-import online.nasgar.skywars.utils.Utils;
+import online.nasgar.skywars.util.Utils;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.Plugin;
