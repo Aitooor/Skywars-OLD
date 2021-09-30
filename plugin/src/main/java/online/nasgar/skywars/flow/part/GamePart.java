@@ -8,7 +8,6 @@ import me.yushust.inject.Injector;
 import online.nasgar.skywars.api.game.Game;
 
 import java.lang.reflect.Type;
-import java.util.Collections;
 import java.util.List;
 
 public class GamePart implements ArgumentPart {

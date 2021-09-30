@@ -1,8 +1,6 @@
 package online.nasgar.skywars.module;
 
 import me.yushust.inject.AbstractModule;
-import me.yushust.inject.Binder;
-import me.yushust.inject.Module;
 import online.nasgar.skywars.SkyWars;
 
 public class MainModule extends AbstractModule {
