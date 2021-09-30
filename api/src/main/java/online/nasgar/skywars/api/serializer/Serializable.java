@@ -1,14 +1,14 @@
 package online.nasgar.skywars.api.serializer;
 
 /**
- * Represents the serializable model
+ * Represents the serializable model.
  */
 public interface Serializable {
 
     /**
-     * Get the id
+     * Get the id of the {@link Serializable} class.
      *
-     * @return The id of the object
+     * @return The id of the object.
      */
     String getId();
 }

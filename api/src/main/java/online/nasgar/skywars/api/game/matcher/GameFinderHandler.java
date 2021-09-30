@@ -7,16 +7,18 @@ import java.util.Optional;
 
 /**
  * Represents the finder of games
- * if is the fullest game
+ * if is the fullest game.
+ *
+ * @see Game
  */
 public interface GameFinderHandler {
 
     /**
-     * Find a accessible game
+     * Find a accessible game.
      *
-     * @param type The {@link Game}'s type
+     * @param type The {@link Game}'s type.
      * @return An optional {@link Game}, result
-     * of the search
+     * of the search.
      */
     Optional<Game> findAccessibleGame(GameType type);
 }

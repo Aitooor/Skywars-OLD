@@ -8,7 +8,9 @@ import online.nasgar.skywars.api.user.User;
 import java.util.Set;
 
 /**
- * Represents the model of a arena
+ * Represents the model of a arena.
+ *
+ * @see Serializable
  */
 public interface Game extends Serializable {
 

@@ -11,7 +11,9 @@ import java.util.Optional;
 
 /**
  * Represents the object of the player
- * and get Statistics and another data
+ * to get Statistics and another data.
+ *
+ * @see Serializable
  */
 public interface User extends Serializable {
 

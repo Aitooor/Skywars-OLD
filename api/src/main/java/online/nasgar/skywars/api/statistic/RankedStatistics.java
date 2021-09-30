@@ -2,7 +2,7 @@ package online.nasgar.skywars.api.statistic;
 
 /**
  * Represents the Ranked statistics for
- * the players
+ * the players.
  */
 public interface RankedStatistics {
 

@@ -1,9 +1,9 @@
 package online.nasgar.skywars.api.statistic;
 
 /**
- * Represents a object to use objects like statistics
+ * Represents a object to use objects like statistics.
  *
- * @param <O> The statistic object to be used
+ * @param <O> The statistic object to be used.
  */
 public class Statistic<O> {
 
