@@ -17,4 +17,10 @@ public class SkyWars extends JavaPlugin {
         injector.injectMembers(this);
         skyWarsService.start();
     }
+
+    @Override
+    public void onDisable() {
+        skyWarsService.stop();
+        //Shutdown logic
+    }
 }
