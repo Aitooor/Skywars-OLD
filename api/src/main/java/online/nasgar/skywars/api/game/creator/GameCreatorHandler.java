@@ -27,7 +27,7 @@ public interface GameCreatorHandler {
      * Save a game
      *
      * @param user The player to be removed to the setup
-     * @param game The {@Link game}
+     * @param game The {@link Game}
      * @return An boolean result if the {@link User} is in setup
      */
     boolean save(
