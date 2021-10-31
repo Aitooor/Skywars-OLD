@@ -1,9 +1,12 @@
 package online.nasgar.skywars.api.user;
 
 import online.nasgar.skywars.api.game.Game;
+import online.nasgar.skywars.api.repository.key.annotation.InstanceDeserializer;
+import online.nasgar.skywars.api.repository.key.annotation.RepositoryKey;
 import online.nasgar.skywars.api.serializer.Serializable;
-import online.nasgar.skywars.api.statistic.RankedStatistics;
 import online.nasgar.skywars.api.statistic.Statistic;
+import online.nasgar.skywars.api.user.impl.RankedStatistics;
+import online.nasgar.skywars.api.user.impl.UserImpl;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.Nullable;
 import java.util.Optional;
@@ -15,6 +18,8 @@ import java.util.Optional;
  *
  * @see Serializable
  */
+@RepositoryKey("users")
+@InstanceDeserializer(UserImpl.class)
 public interface User extends Serializable {
 
     Statistic<Long> getCoins();
@@ -27,7 +32,7 @@ public interface User extends Serializable {
 
     Statistic<Integer> getWins();
 
-    Statistic<Integer> getTimePlayed();
+    Statistic<Long> getTimePlayed();
 
     Statistic<Integer> getBlocksPlaced();
 
@@ -41,5 +46,13 @@ public interface User extends Serializable {
 
     void setGame(Game game);
 
+    String getName();
+
     @Nullable Player getPlayer();
+
+    void setPlayer(Player player);
+
+    boolean isAlive();
+
+    void setAlive(boolean alive);
 }
