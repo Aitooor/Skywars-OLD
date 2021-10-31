@@ -5,7 +5,6 @@ import me.yushust.inject.key.TypeReference;
 import online.nasgar.skywars.api.repository.Repository;
 import online.nasgar.skywars.api.serializer.Serializable;
 import online.nasgar.skywars.database.JSONRepository;
-import online.nasgar.skywars.database.MySQLRepository;
 import online.nasgar.skywars.file.FileHandler;
 
 import javax.inject.Inject;
@@ -24,7 +23,7 @@ public class RepositoryProvider<O extends Serializable> implements Provider<Repo
         if(config.getString("plugin.storage-type").toUpperCase(Locale.ROOT).equals("MYSQL")){
             return injector.getInstance(
                     TypeReference.of(
-                            MySQLRepository.class,
+                            JSONRepository.class,
                             typeReference.getRawType()
                     )
             );
