@@ -29,6 +29,12 @@
             <version>1.8.8-R0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>me.yushust.inject</groupId>
+            <artifactId>core</artifactId>
+            <version>0.4.2-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
 </project>
