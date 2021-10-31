@@ -1,5 +1,7 @@
 package online.nasgar.skywars.api.statistic;
 
+import com.google.gson.annotations.Expose;
+
 /**
  * Represents a object to use objects like statistics.
  *
@@ -7,6 +9,7 @@ package online.nasgar.skywars.api.statistic;
  */
 public class Statistic<O> {
 
+    @Expose
     private O statistic;
 
     public Statistic(O statistic){
@@ -19,5 +22,10 @@ public class Statistic<O> {
 
     public void setStatistic(O statistic) {
         this.statistic = statistic;
+    }
+
+    @Override
+    public String toString(){
+        return String.valueOf(statistic);
     }
 }
