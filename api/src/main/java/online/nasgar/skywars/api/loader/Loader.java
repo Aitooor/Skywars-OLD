@@ -6,7 +6,12 @@ package online.nasgar.skywars.api.loader;
 public interface Loader {
 
     /**
-     * The unique method to load classes.
+     * The method to load.
      */
     void load();
+
+    /**
+     * The method to unload
+     */
+    void unload();
 }
