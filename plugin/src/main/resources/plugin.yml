@@ -1,0 +1,7 @@
+main: online.nasgar.skywars.SkyWars
+name: SkyWars
+version: 1.0
+author: SoyMicrah
+description: A SkyWars plugin bassed on Hypixel SkyWars
+api-version: 1.13
+
