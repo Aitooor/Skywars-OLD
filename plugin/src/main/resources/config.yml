@@ -1,0 +1,3 @@
+plugin:
+  storage-type: LOCAL
+  no-permission: "&cYou don't have permissions"
